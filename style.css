@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #612FAB00, #612FAB, #612FAB00, #612FAB;
+  background: linear-gradient(168.44deg, #2e335a 1.62%, #1c1b33 95.72%);
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 100px; */
+  
+}
+.search input {
+  border: 1 px solid rgba(46, 51, 90, 0.26);
+  color: white;
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  margin-top: 50px;
+  position: fixed;
+  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  background: linear-gradient(
+    168deg,
+    rgba(46, 51, 90, 0.26) 1.62%,
+    rgba(28, 27, 51, 0.26) 95.72%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.search i {
+  margin-top: 50px;
+  margin-left: -290px;
+  font-size: large;
+  color:#fff;
+  position: fixed;
+}
+.search input::placeholder {
+  padding: 15px; /* Adjust the margin-left value as needed */
+  color: #888;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button {
+  padding: 15px 25px;
+  margin-left: 450px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background: rgba(74, 57, 127, 0.7);
+  color: white;
+}
+.weather-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 35px;
+  gap: 30px;
+}
+.weather {
+  width: 343px;
+  height: 176px;
+  border-radius: 10px;
+  color: white;
+  background-image: url(./assest/Rectangle\ 1.svg);
+}
+.degree {
+  font-size: 64px;
+  letter-spacing: 0.374px;
+  font-style: normal;
+  margin: 20px;
+}
+.temperature {
+  margin: 7px;
+  margin-left: 21px;
+  color: rgba(235, 235, 245, 0.6);
+}
+.location-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 85px;
+}
+.location {
+  margin: 15px;
+  margin-top: -15px;
+}
+.location-1 span {
+  margin-bottom: 24px;
+}
+.box1{
+  display: flex;
+  justify-content: space-between;
+
+}
+.box1 img {
+  width: 175px;
+  height: 200px;
+  margin-top: -75px;
+  margin-right: 0px;
+}
+
+@media(600px >= width ) {
+  /* Medium screens */
+  .weather-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .search input {
+    width: 259px;
+  }
+  .search {
+    display: flex;
+    justify-content: flex-start;
+    margin-left:50px ;
+  }
+  .btn button{
+   margin-left:300px ;
+  }
+  .search i {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .weather-box{
+    grid-template-columns: repeat(1,1fr);
+  }
+  }
+  @media(max-width:820px){
+    .weather-box{
+      grid-template-columns: repeat(2,1fr);
+    } 
+  }
+
+@media(min-width > 850px) {
+
+  .weather-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+}
