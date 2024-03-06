@@ -12,7 +12,7 @@ async function fetchText() {
     }
 
     const data = await response.json();
-    console.log('Weather Data:', data);
+    // console.log('Weather Data:', data);
 
     const cityName = data.name;
     const weatherConditions = data.weather.map(weather => weather.description).join(', ');
